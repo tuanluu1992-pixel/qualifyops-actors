@@ -1,0 +1,32 @@
+{
+  "title": "ATS Hiring Signal Finder",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "companies": {
+      "title": "Companies (platform + slug)",
+      "type": "array",
+      "description": "ATS sources as objects: {\"platform\":\"greenhouse|lever|ashby\",\"slug\":\"company\"}.",
+      "editor": "json",
+      "prefill": [
+        { "platform": "greenhouse", "slug": "stripe" },
+        { "platform": "ashby", "slug": "ramp" }
+      ]
+    },
+    "boardUrls": {
+      "title": "Or paste public ATS board URLs",
+      "type": "array",
+      "description": "Greenhouse (boards.greenhouse.io/x), Lever (jobs.lever.co/x) or Ashby (jobs.ashbyhq.com/x) URLs.",
+      "editor": "stringList",
+      "prefill": ["https://boards.greenhouse.io/gitlab"]
+    },
+    "maxCompanies": {
+      "title": "Max companies",
+      "type": "integer",
+      "default": 100,
+      "minimum": 1,
+      "description": "Maximum number of companies to process (default 100)."
+    }
+  },
+  "required": []
+}
