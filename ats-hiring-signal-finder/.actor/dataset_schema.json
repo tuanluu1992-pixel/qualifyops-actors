@@ -1,0 +1,11 @@
+{
+  "actorSpecification": 1,
+  "fields": {},
+  "views": {
+    "overview": {
+      "title": "Companies hiring",
+      "transformation": { "fields": ["company", "platform", "open_roles", "hiring_signal", "signal_score", "locations", "board_url"] },
+      "display": { "component": "table" }
+    }
+  }
+}
