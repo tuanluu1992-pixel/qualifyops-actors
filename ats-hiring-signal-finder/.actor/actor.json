@@ -1,0 +1,11 @@
+{
+  "actorSpecification": 1,
+  "name": "ats-hiring-signal-finder",
+  "title": "ATS Hiring Signal Finder — Greenhouse, Lever & Ashby",
+  "description": "Turn public Greenhouse/Lever/Ashby job boards into one scored hiring-signal record per company: open roles, a deterministic hiring signal, locations and evidence job URLs. No LinkedIn, no browser, no paid upstream.",
+  "version": "0.1",
+  "buildTag": "latest",
+  "input": "./input_schema.json",
+  "storages": { "dataset": "./dataset_schema.json" },
+  "readme": "../README.md"
+}
